@@ -117,6 +117,8 @@ kubeadm join 172.18.0.2:6443 --token <SEU_TOKEN> \
 # ✅ Verificação de Sucesso
 No Master, valide se os nós estão Ready:
 
+docker exec -it master1 bash
+
 # Verifique se os componentes do sistema estabilizaram (PID fixo)
 ps -ef | grep kube
 
